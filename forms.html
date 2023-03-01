@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms w/ HTML</title>
+  </head>
+  <body>
+    <form>
+      <!-- FOR ATTRIBUTE MATCHING ID -->
+      <label for="post-title">Title:</label>
+      <input
+        id="post-title"
+        name="title"
+        type="text"
+        required
+        placeholder="Enter title here..."
+      />
+      <br />
+      <label>
+        Email:
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Enter email here..."
+        />
+      </label>
+      <br />
+      <label
+        ><strong>Post Visibility:</strong> Public
+        <input
+          id="public"
+          name="visibility"
+          type="radio"
+          value="public"
+          checked
+        />
+      </label>
+      <label>
+        Private
+        <input id="private" name="visibility" type="radio" value="private" />
+      </label>
+      <br />
+      <label>
+        Post category
+        <select id="post-category" name="category">
+          <option>-- Select a category --</option>
+          <option value="personal">Personal</option>
+          <option value="professional">Professional</option>
+          <option value="promotion">Promotion</option>
+        </select>
+      </label>
+      <!-- NEST INPUT WITHIN LABEL ELEMENT 
+      <label for="post-title">
+        Title
+        <input id="post-title" name="title" type="text" />
+      </label> 
+        -->
+      <br />
+      <label>
+        Pin post?
+        <input id="pin-post" name="pin" type="checkbox" value="pin" checked />
+      </label>
+      <!-- USING THE BUTTON ELEMENT -->
+      <button type="submit">Create Post</button>
+      <!-- USING THE INPUT ELEMENT 
+      <input type="submit" value="Create Post" /> -->
+    </form>
+  </body>
+</html>
